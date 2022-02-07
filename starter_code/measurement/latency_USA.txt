@@ -1,0 +1,26 @@
+CARFORIA,USA:
+PING 104.156.230.107 (104.156.230.107) 56(84) bytes of data.
+64 bytes from 104.156.230.107: icmp_seq=1 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=2 ttl=47 time=161 ms
+64 bytes from 104.156.230.107: icmp_seq=3 ttl=47 time=164 ms
+64 bytes from 104.156.230.107: icmp_seq=4 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=5 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=6 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=7 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=8 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=9 ttl=47 time=166 ms
+64 bytes from 104.156.230.107: icmp_seq=10 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=11 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=12 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=13 ttl=47 time=164 ms
+64 bytes from 104.156.230.107: icmp_seq=14 ttl=47 time=163 ms
+64 bytes from 104.156.230.107: icmp_seq=15 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=16 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=17 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=18 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=19 ttl=47 time=162 ms
+64 bytes from 104.156.230.107: icmp_seq=20 ttl=47 time=162 ms
+
+--- 104.156.230.107 ping statistics ---
+20 packets transmitted, 20 received, 0% packet loss, time 19610ms
+rtt min/avg/max/mdev = 161.505/163.329/166.243/1.021 ms

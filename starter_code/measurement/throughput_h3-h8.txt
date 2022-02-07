@@ -1,0 +1,26 @@
+h3 server:
+------------------------------------------------------------
+Server listening on TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 10.0.0.3 port 1234 connected with 10.0.0.8 port 37090
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-39.2 sec  16.1 MBytes  3.45 Mbits/sec
+
+h8 client:
+------------------------------------------------------------
+[ 35] local 10.0.0.8 port 37090 connected with 10.0.0.3 port 1234
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.6 sec  16.1 MBytes  6.57 Mbits/sec
+
+h8 server:
+------------------------------------------------------------
+[ 36] local 10.0.0.8 port 1234 connected with 10.0.0.3 port 33638
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-28.8 sec  14.0 MBytes  4.08 Mbits/sec
+
+h3 client:
+------------------------------------------------------------
+[ 35] local 10.0.0.3 port 33638 connected with 10.0.0.8 port 1234
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-21.3 sec  14.0 MBytes  5.51 Mbits/sec

@@ -1,0 +1,35 @@
+s1 as server:
+------------------------------------------------------------
+Server listening on TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 127.0.0.1 port 1234 connected with 127.0.0.1 port 34076
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-20.0 sec  31.5 GBytes  13.5 Gbits/sec
+
+s2 as client:
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 1234
+TCP window size: 2.50 MByte (default)
+------------------------------------------------------------
+[ 35] local 127.0.0.1 port 34076 connected with 127.0.0.1 port 1234
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.0 sec  31.5 GBytes  13.5 Gbits/sec
+
+s2 as server:
+------------------------------------------------------------
+Server listening on TCP port 2345
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 127.0.0.1 port 2345 connected with 127.0.0.1 port 56490
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-20.0 sec  30.9 GBytes  13.2 Gbits/sec
+
+s1 as client:
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 2345
+TCP window size: 2.50 MByte (default)
+------------------------------------------------------------
+[ 35] local 127.0.0.1 port 56490 connected with 127.0.0.1 port 2345
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.0 sec  30.9 GBytes  13.2 Gbits/sec

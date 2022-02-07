@@ -1,0 +1,25 @@
+2)    Predicted throughput: 20 Mbps
+      Predicted latency: 2*(40+10+5+5) + 8*64*10^3/20*10^6=120.0256 ms
+      Actual throughput: server: 5.03 Mbps, client: 5.33 Mbps
+      Actual latency: 148.251 ms
+      Explanation of results: predicted throughput should equal the smallest bandwidth among 4 links ideally, predicted latency is 2 * total propagation delay + transmission delay. actual latency gets longer and actual throughput gets slower in reality due to compute resources affect.
+
+3.1)  Predicted throughput: each: 20/2=10 Mbps
+      Predicted latency: each: 120*3/2 + 0.0256=180.0256 ms 
+      Actual throughput: pair1: server: 1.74 Mbps, client: 2.33 Mbps, pair2: server: 7.95 Mbps, client: 10.8 Mbps
+      Actual latency: pair1: 228.574 ms, pair2: 266.089 ms
+      Explanation of results: two pairs share the same bandwidth, ideally each throughput becomes 1/2. if one arrives first, the other will wait until the first one finishes, averagely each RTT becomes 3/2.
+
+3.2)  Predicted throughput: each: 20/3=6.67 Mbps
+      Predicted latency: each: 120*(1+2+3)/3 + 0.0256=240.0256 ms
+      Actual throughput: pair1: server: 1.34 Mbps, client: 1.67 Mbps, pair2: server: 1.11 Mbps, client: 1.66 Mbps, pair3: server: 4.08 Mbps, client: 6.43 Mbps
+      Actual latency: pair1: 215.215 ms, pair2: 283.123 ms, pair3: 282.384 ms
+      Explanation of results: three pairs share the same bandwidth, ideally each throughput becomes 1/3. each one will wait until all previous ones finish, each RTT becomes (1+2+3)/3.
+
+4)    Predicted throughput: both: 25/2=12.5 Mbps
+      Predicted latency: h1-h9: 2*(40+(10+20)/2+(5+10)/2+5) + 0.0256=135.0256 ms, h3-h8: 2*((10+20)/2+(5+10)/2) + 0.0256=45.0256 ms
+      Actual throughput: h1-h9: server: 2.84 Mbps, client: 5.20 Mbps, h3-h8: server: 3.45 Mbps, client: 6.57 Mbps
+      Actual latency: h1-h9: 232.440 ms, h3-h8: 65.545 ms
+      Explanation of results: they share L2 and L3, and the smallest bandwidth is L3, each throughput is 1/2 of the bandwidth of L3. their propagation delays between L2 and L3 become 3/2.
+
+5)    Explanation of results: the main factor affecting the latency is the propagation delay, which is mainly affected by the physical distance.

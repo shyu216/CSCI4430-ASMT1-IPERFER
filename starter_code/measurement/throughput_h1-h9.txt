@@ -1,0 +1,35 @@
+h1 server:
+------------------------------------------------------------
+Server listening on TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 10.0.0.1 port 1234 connected with 10.0.0.9 port 37052
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-37.3 sec  12.6 MBytes  2.84 Mbits/sec
+
+h9 client:
+------------------------------------------------------------
+Client connecting to 10.0.0.1, TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.9 port 37052 connected with 10.0.0.1 port 1234
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.4 sec  12.6 MBytes  5.20 Mbits/sec
+
+h9 server:
+------------------------------------------------------------
+Server listening on TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 10.0.0.9 port 1234 connected with 10.0.0.1 port 35576
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-28.3 sec  6.62 MBytes  1.96 Mbits/sec
+
+h1 client:
+------------------------------------------------------------
+Client connecting to 10.0.0.9, TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 35] local 10.0.0.1 port 35576 connected with 10.0.0.9 port 1234
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.3 sec  6.62 MBytes  2.74 Mbits/sec

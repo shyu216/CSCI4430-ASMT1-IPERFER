@@ -1,0 +1,35 @@
+s3 as server:
+------------------------------------------------------------
+Server listening on TCP port 1234
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 127.0.0.1 port 1234 connected with 127.0.0.1 port 34084
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-20.0 sec  34.0 GBytes  14.6 Gbits/sec
+
+s4 as client:
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 1234
+TCP window size: 2.50 MByte (default)
+------------------------------------------------------------
+[ 35] local 127.0.0.1 port 34084 connected with 127.0.0.1 port 1234
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.0 sec  34.0 GBytes  14.6 Gbits/sec
+
+s4 as server:
+------------------------------------------------------------
+Server listening on TCP port 2345
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[ 36] local 127.0.0.1 port 2345 connected with 127.0.0.1 port 56498
+[ ID] Interval       Transfer     Bandwidth
+[ 36]  0.0-20.0 sec  28.7 GBytes  12.3 Gbits/sec
+
+s3 as client:
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 2345
+TCP window size: 2.50 MByte (default)
+------------------------------------------------------------
+[ 35] local 127.0.0.1 port 56498 connected with 127.0.0.1 port 2345
+[ ID] Interval       Transfer     Bandwidth
+[ 35]  0.0-20.0 sec  28.7 GBytes  12.3 Gbits/sec 
